@@ -14,7 +14,7 @@ int countActivites(vector<pair<int,int> > v){
     int count = 1;
     int finish = v[0].second;
     
-    for(int i=1;i<v.size()-1;i++){
+    for(int i=1;i<v.size()-2;i++){
         if(v[i].first>=finish){
             count++;
             finish = v[i].second;
